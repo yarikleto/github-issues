@@ -202,7 +202,7 @@ export default class Form extends singleton {
     });
   };
 
-  // TODO: Нужно перенести валидуцию формы и полей в state компонентов
+  // TODO: Нужно перенести валидацию формы и полей в state компонентов
   @action
   validateUserInput = () => {
     this.userInput.errors = this.validateInput({
