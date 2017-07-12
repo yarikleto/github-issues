@@ -1,0 +1,26 @@
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app__title {
+  height: 50px;
+  background-color: #34495E;
+  box-shadow: 0 0 15px #34495E;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.app__logo-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.app__logo-link:hover {
+  transform: scale(1.1);
+}

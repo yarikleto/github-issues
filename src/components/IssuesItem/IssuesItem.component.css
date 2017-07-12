@@ -1,0 +1,71 @@
+.issues-list__item {
+  min-height: 100px;
+
+  position: relative;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, .01);
+  border-radius: 5px;
+  border: 1px solid rgba(27, 31, 35, 0.1);
+  box-shadow: 0 5px 10px rgba(27, 31, 35, 0.02);
+}
+
+.issues-list__number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 11px;
+  color: #34495E;
+}
+
+.issues-list__user-info {
+  display: inline-block;
+  padding: 20px 10px 10px;
+  width: 150px;
+  border-right: 1px solid rgba(27, 31, 35, 0.1);
+}
+
+.issues-list__avatar-wrapper {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.issues-list__avatar {
+  max-width: 100%;
+}
+
+.issues-list__name {
+  text-align: center;
+  font-size: 14px;
+  color: #34495E;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.issues-list__github-link {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #34495E;
+}
+
+.issues-list__title {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 808px;
+  color: #34495E;
+}
+
+.issues-list__opening-date {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 11px;
+  color: #34495E;
+}

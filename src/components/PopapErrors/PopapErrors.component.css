@@ -1,0 +1,42 @@
+@keyframes showPopap {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.error-popap {
+  position: absolute;
+  z-index: 10;
+  top: 120%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #E74C3C;
+  border-radius: 5px;
+  padding: 5px;
+  color: #E74C3C;
+  font-size: 13px;
+  animation-name: showPopap;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+}
+
+.error-popap:before {
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom-color: #E74C3C;
+  bottom: 100%;
+  left: 20%;
+}
+
+.error{
+  border-top: 1px solid rgba(255, 0, 0, .2);
+  border-bottom: 1px solid rgba(255, 0, 0, .2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
