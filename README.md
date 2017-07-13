@@ -14,5 +14,3 @@ yarn start # npm start
 ```bash
 yarn build # npm run build
 ```
----
-Текущая верия: `0.1.1`
