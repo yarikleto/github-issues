@@ -15,4 +15,4 @@ yarn start # npm start
 yarn build # npm run build
 ```
 ---
-Текущая верия: `0.1`
+Текущая верия: `0.1.1`
