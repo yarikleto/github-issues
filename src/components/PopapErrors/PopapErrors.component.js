@@ -34,9 +34,11 @@ export default class PopapErrors extends PureComponent {
   }
 
   doNotDisplayThrough(delay) {
-    this.displayPopapTimeoutId = setTimeout(() => {
-      this.setState({isDisplayPopup: false});
-    }, 2000);
+    return () => {
+      this.displayPopapTimeoutId = setTimeout(() => {
+        this.setState({isDisplayPopup: false});
+      }, 2000);
+    };
   }
 
   isValidArray(array) {
