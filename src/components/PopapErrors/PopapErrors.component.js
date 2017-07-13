@@ -10,19 +10,7 @@ export default class PopapErrors extends PureComponent {
   state = {
     isDisplayPopup: false,
   };
-  displayPopaTimeoutId = null;
-
-  componentWillReceiveProps(newProps) {
-    // Если поступил старый props, то пропускаем
-    if (newProps.errorList === this.props.errorList) return;
-    if (newProps.errorList !== null && newProps.errorList.length !== 0) {
-      clearTimeout(this.displayPopaTimeoutId);
-      this.setState({isDisplayPopup: true});
-      this.displayPopaTimeoutId = setTimeout(() => {
-        this.setState({isDisplayPopup: false});
-      }, 2000);
-    }
-  }
+  displayPopapTimeoutId = null;
 
   render() {
     const { isDisplayPopup } = this.state;
@@ -35,6 +23,24 @@ export default class PopapErrors extends PureComponent {
         </div>
       );
     return null;
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (newProps.errorList === this.props.errorList) return;
+    if (this.isValidArray(newProps.errorList)) {
+      clearTimeout(this.displayPopapTimeoutId);
+      this.setState({isDisplayPopup: true}, this.doNotDisplayThrough(2000));
+    }
+  }
+
+  doNotDisplayThrough(delay) {
+    this.displayPopapTimeoutId = setTimeout(() => {
+      this.setState({isDisplayPopup: false});
+    }, 2000);
+  }
+
+  isValidArray(array) {
+    return array !== null && array.length !== 0;
   }
 }
 PopapErrors.propTypes = {
