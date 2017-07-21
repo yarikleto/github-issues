@@ -56,7 +56,7 @@ class Store extends singleton {
         });
       }, 1000);
       return;
-    };
+    }
     runInAction(() => {
       this.issuesStatus = 'success';
       this.issues = responce.issues;
