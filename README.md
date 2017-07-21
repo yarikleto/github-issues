@@ -4,6 +4,10 @@
 - Mobx
 - CSS Modules
 ---
+Установка зависимостей:
+```bash
+npm install #yarn install
+```
 Чтобы запустить проект локально:
 ```bash
 yarn start # npm start
