@@ -1,20 +1,20 @@
 ## Github Issues
-Работа с обращениями нужного репозитория.
+Working with issues of the desired repository.
 - React
 - Mobx
 - CSS Modules
 ---
-Установка зависимостей:
+Installing dependencies:
 ```bash
 npm install #yarn install
 ```
-Чтобы запустить проект локально:
+To run the project locally:
 ```bash
 yarn start # npm start
 # localhost:3000
 ```
 
-Чтобы собрать проект:
+To build the project:
 ```bash
 yarn build # npm run build
 ```
